@@ -9,7 +9,7 @@
     height: 100%;
     background-color: rgba(29, 21, 3, 0.897);
     backdrop-filter: blur(24px);
-    /* transition: .5s all; */
+    transition: .5s all; 
     z-index: 999;
 }
 
