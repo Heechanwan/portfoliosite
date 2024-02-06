@@ -1,0 +1,20 @@
+/* body{
+    cursor: none !important;
+}
+body *:hover{
+    cursor: none;
+} */
+
+.cursor {
+    position: fixed;
+    width: 16px;
+    height: 16px;
+    background-color: white;
+    border-radius: 50%;
+    pointer-events: none;
+    mix-blend-mode: difference;
+    transform: translate(-8px, -8px);
+    z-index: 9999;
+}
+
+

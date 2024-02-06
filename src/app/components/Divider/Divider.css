@@ -1,0 +1,7 @@
+.dotted{
+    border-top: 1px dashed #ffb400;
+    height: 1px;
+    width: 100vw;
+    transform: translateY(60px);
+    margin: 24px;
+}

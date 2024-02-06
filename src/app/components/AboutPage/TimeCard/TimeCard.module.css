@@ -1,0 +1,54 @@
+.card{
+    position: relative;
+    min-width: 280px;
+    border: 2px solid #ffb40050;
+    padding: 32px;
+    border-radius: 8px;
+}
+
+.icon{
+    position: absolute;
+    top: -24px;
+    left: -24px;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background-color: #b07f0c;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon svg{
+    width: 24px;
+    height: 24px;
+}
+
+.icon svg path{
+    fill: white;
+}
+
+.inner{
+
+}
+
+.timeLine{
+    width: fit-content;
+    padding: 4px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #ffb300ca;
+    font-weight: bold;
+}
+
+.title{
+    margin-top: 24px;
+    color: white;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.text{
+    color: #ffffff95;
+    margin-top: 4px;
+}

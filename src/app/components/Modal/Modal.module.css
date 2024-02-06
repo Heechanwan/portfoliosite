@@ -1,0 +1,148 @@
+.modal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100%;
+    background-color: rgba(29, 21, 3, 0.897);
+    backdrop-filter: blur(24px);
+    /* transition: .5s all; */
+    z-index: 999;
+}
+
+.inner{
+    position: relative;
+    max-width: 60vw;
+    width: 100%;
+    height: fit-content;
+    background-color: #222;
+    padding: 64px;
+    border-radius: 8px;
+    box-shadow: 4px 4px 0px 0 #ffb40090;
+    /* border: 3px solid #ffb40040; */
+}
+
+.close{
+    position: absolute;
+    top: 32px;
+    right: 32px;
+}
+
+.close svg{
+    width: 32px;
+    height: 32px;
+}
+
+.close path{
+    fill: #fff;
+    transition: .3s all;
+}
+
+.close:hover path{
+    fill: #ffb400;
+}
+
+.hide{
+    opacity: 0 !important;
+}
+
+
+.modal h2{
+    position: relative;
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 32px;
+}
+
+.modal h2::before{
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: -20px;
+    background-color: #ffb400;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 #ffb400;
+    opacity: 0.8;
+}
+.modal h2::after{
+    content: '';
+    position: absolute;
+    top: 20px;
+    transform: translateX(8px);
+    background-color: #ffb400;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px 0 #ffb400;
+    opacity: 0.8;
+}
+
+.modal h4{
+    color: white;
+    font-size: 18px;
+}
+
+.modal ul{
+    margin-top: 16px;
+    margin-bottom: 32px;
+}
+
+.modal li{
+    color: white;
+    list-style-type: disc;
+    font-size: 14px;
+    margin-top: 8px;
+    margin-left: 16px;
+}
+
+.modal a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 48px;
+    border: 1px solid #fff;
+    background-color: #fff;
+    color: rgb(208, 149, 10);
+    box-shadow: 4px 4px 0 0 rgb(208, 149, 10);
+    border-radius: 8px;
+    transition: .3s all;
+}
+
+.modal a:hover{
+    color: white;
+    background-color: #ffb400;
+    border-color: #ffb400;
+    box-shadow: 0 0 10px 0 #ffb40060;
+}
+
+.modal .alert{
+    display: flex;
+    align-items: center;
+    grid-gap: 8px;
+    color: rgba(255, 99, 71, 0.603);
+}
+
+.innerImg{
+    border-radius: 8px;
+}
+
+
+@media (max-width: 992px){
+    .inner{
+        max-width: 90vw;
+    }
+}
+
+@media (max-width: 450px){
+    .inner{
+        max-width: 90vw;
+        padding: 48px;
+    }
+}

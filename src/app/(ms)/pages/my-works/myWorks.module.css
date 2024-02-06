@@ -1,0 +1,96 @@
+.mainSection{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+}
+
+.container{
+
+}
+
+.inner{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 64px 0;
+}
+
+.inner h1{
+    position: relative;
+    font-size: 48px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #ffb400;
+}
+
+.inner .title{
+    position: relative;
+    z-index: 1;
+}
+
+.inner .subTitle{
+    content: 'MY WORKS';
+    position: absolute;
+    left: 0;
+    color: white;
+    opacity: 0.1;
+    scale: 1.7;
+    z-index: 0;
+}
+
+.tabs{
+    margin-top: 64px;
+    margin-bottom: 32px;
+}
+
+.tabs ul{
+    display: flex;
+    grid-gap: 32px;
+    font-weight: 500;
+}
+
+.tabs ul li{
+    color: white;
+    font-weight: 500;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: .3s all;
+}
+
+.tabs ul li:hover{
+    color: #ffb40070;
+}
+
+.tabs ul li.active{
+    color: #ffb400;
+}
+
+.tabContent{
+    width: 100%;
+}
+
+.gridCards{
+    position: relative;
+    display: grid;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    grid-gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    list-style: none;
+    justify-content: center;
+}
+
+@media (max-width: 1024px) {
+    .gridCards{
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 100px;
+    }
+}
+
+@media (max-width: 740px) {
+    .gridCards{
+        grid-template-columns: 1fr;
+        margin-bottom: 100px;
+    }
+}

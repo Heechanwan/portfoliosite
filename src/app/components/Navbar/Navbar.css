@@ -1,0 +1,104 @@
+nav{
+    position: fixed;
+    top: 0;
+    right: 24px;
+    height: 100vh;
+    z-index: 99;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-end;
+    height: fit-content; 
+    grid-gap: 24px;
+}
+
+nav .li{
+    float: right;
+    position: relative;
+    width: 64px;
+    height: 64px;
+    background-color: #2b2a2a;
+    border-radius: 50px;
+    cursor: pointer;
+    overflow: hidden;
+    transition: .3s all;
+    scale: 0.9;
+}
+
+nav .li a{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 0 20px;
+}
+
+nav .li:hover{
+    width: 180px;
+    background-color: #ffb400;
+}
+
+nav .li:hover p{
+    opacity: 1;
+    transition: .5s all;
+}
+
+nav .li svg{
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 20px;
+}
+
+nav .li svg path{
+    fill: white;
+}
+
+nav .li p{
+    margin-right: 12px;
+    font-size: 16px;
+    font-weight: 600;
+    position: fixed;
+    color: #fff;
+    letter-spacing: 1px;
+    opacity: 0;
+}
+
+nav .li.active{
+    background-color: #ffb400;
+    box-shadow: 0 0 10px 0 #ffb400;
+    scale: 1.1;
+}
+
+
+@media(max-width: 1024px) {
+    nav{
+        top: unset;
+        right: unset;
+        left: unset;
+        bottom: 0%;
+        width: 100%;
+        height: fit-content;
+        background-color: rgba(66, 46, 0, 0.5);
+        backdrop-filter: blur(32px);
+        padding: 24px 32px;
+    }
+    nav ul{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    nav .li:hover{
+        width: 64px;
+        background-color: #ffb400;
+    }
+
+    nav .li:hover p{
+        opacity: 0;
+    }
+}
